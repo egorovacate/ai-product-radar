@@ -1,0 +1,46 @@
+{
+  "languages": ["en", "ru"],
+  "source_groups": [
+    {
+      "name": "AI labs and platforms",
+      "priority": "high",
+      "domains": [
+        "openai.com",
+        "developers.openai.com",
+        "anthropic.com",
+        "blog.google",
+        "deepmind.google",
+        "ai.meta.com",
+        "mistral.ai",
+        "huggingface.co"
+      ]
+    },
+    {
+      "name": "Product and engineering",
+      "priority": "high",
+      "domains": [
+        "martinfowler.com",
+        "thoughtworks.com",
+        "github.blog",
+        "newsletter.pragmaticengineer.com",
+        "svpg.com",
+        "producttalk.org"
+      ]
+    },
+    {
+      "name": "Research and discovery",
+      "priority": "medium",
+      "domains": [
+        "arxiv.org",
+        "paperswithcode.com",
+        "news.ycombinator.com"
+      ]
+    }
+  ],
+  "notes": [
+    "This is a starting list, not a whitelist.",
+    "Prefer original documentation and engineering posts over media rewrites.",
+    "Add useful sources after they repeatedly produce relevant material."
+  ]
+}
+
