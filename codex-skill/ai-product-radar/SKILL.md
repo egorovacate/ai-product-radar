@@ -34,6 +34,8 @@ Create two files following `references/digest-schema.json`:
 
 Set `counterpart_slug` in each file to the other version's slug. Write the Russian editorial version first, then translate it into natural British English without abridging, simplifying, adding claims, or changing structure. Preserve item IDs, scores, dates, URLs, source titles, technical names, evidence, examples, limitations, and approximate length. Use British spelling and product terminology consistently.
 
+For a completed Russian digest, use `node scripts/translate-digest.mjs data/digests/<file>.json`; it checkpoints every item and rejects a suspiciously short or structurally altered result. Review the English output before publishing.
+
 For each selected item:
 
 - Write a 70–120 word overview.
