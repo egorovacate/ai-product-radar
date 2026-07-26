@@ -8,12 +8,15 @@ export function validateDigest(digest, file = "digest") {
   };
 
   requiredString(digest, "slug", file);
+  requiredString(digest, "language", file);
+  requiredString(digest, "counterpart_slug", file);
   requiredString(digest, "title", file);
   requiredString(digest, "date", file);
   requiredString(digest, "intro", file);
   requiredString(digest?.period, "from", `${file}.period`);
   requiredString(digest?.period, "to", `${file}.period`);
   if (!Array.isArray(digest?.items)) errors.push(`${file}.items must be an array`);
+  if (!["ru", "en-GB"].includes(digest?.language)) errors.push(`${file}.language must be ru or en-GB`);
 
   const ids = new Set();
   for (const [index, item] of (digest.items || []).entries()) {
@@ -60,4 +63,3 @@ if (process.argv[1] === new URL(import.meta.url).pathname) {
   }
   console.log(`Valid: ${target} (${digest.items.length} items)`);
 }
-

@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build-site.mjs",
+    "publish:portfolio": "node scripts/publish-portfolio.mjs",
     "validate": "node scripts/validate-all.mjs",
     "preview": "python3 -m http.server 4173 --directory public"
   }
 }
-
