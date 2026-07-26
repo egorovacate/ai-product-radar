@@ -1,5 +1,201 @@
 {
-  "updated_at": "2026-07-26T11:35:53.212Z",
-  "urls": {},
-  "events": {}
+  "updated_at": "2026-07-26T12:12:05.191Z",
+  "urls": {
+    "https://openai.com/index/introducing-the-codex-app/": {
+      "digest": "2026-07-26-coding-agents",
+      "item_id": "openai-codex-app-2026"
+    },
+    "https://openai.com/index/unrolling-the-codex-agent-loop/": {
+      "digest": "2026-07-26-coding-agents",
+      "item_id": "openai-unrolling-codex-loop-2026"
+    },
+    "https://openai.com/index/running-codex-safely/": {
+      "digest": "2026-07-26-coding-agents",
+      "item_id": "openai-running-codex-safely-2026"
+    },
+    "https://openai.com/index/how-agents-are-transforming-work/": {
+      "digest": "2026-07-26-coding-agents",
+      "item_id": "openai-agents-transforming-work-2026"
+    },
+    "https://www.anthropic.com/research/claude-code-expertise": {
+      "digest": "2026-07-26-coding-agents",
+      "item_id": "anthropic-claude-code-expertise-2026"
+    },
+    "https://github.blog/ai-and-ml/github-copilot/whats-new-with-github-copilot-coding-agent/": {
+      "digest": "2026-07-26-coding-agents",
+      "item_id": "github-copilot-coding-agent-updates-2026"
+    },
+    "https://github.blog/ai-and-ml/github-copilot/evaluating-performance-and-efficiency-of-the-github-copilot-agentic-harness-across-models-and-tasks/": {
+      "digest": "2026-07-26-coding-agents",
+      "item_id": "github-copilot-2026-harness-convergence"
+    },
+    "https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing/": {
+      "digest": "2026-07-26-coding-agents",
+      "item_id": "github-context-routing-efficiency-2026"
+    },
+    "https://github.blog/ai-and-ml/github-copilot/the-era-of-ai-as-text-is-over-execution-is-the-new-interface/": {
+      "digest": "2026-07-26-coding-agents",
+      "item_id": "github-execution-new-interface-2026"
+    },
+    "https://code.visualstudio.com/blogs/2026/03/05/making-agents-practical-for-real-world-development": {
+      "digest": "2026-07-26-coding-agents",
+      "item_id": "vscode-practical-agents-2026"
+    },
+    "https://code.visualstudio.com/blogs/2026/05/15/agent-harnesses-github-copilot-vscode": {
+      "digest": "2026-07-26-coding-agents",
+      "item_id": "vscode-agent-harness-2026"
+    },
+    "https://cursor.com/blog/agent-best-practices": {
+      "digest": "2026-07-26-coding-agents",
+      "item_id": "cursor-agent-best-practices-2026"
+    },
+    "https://cursor.com/blog/agent-sandboxing": {
+      "digest": "2026-07-26-coding-agents",
+      "item_id": "cursor-local-agent-sandbox-2026"
+    },
+    "https://cursor.com/blog/scaling-agents": {
+      "digest": "2026-07-26-coding-agents",
+      "item_id": "cursor-scaling-long-running-agents-2026"
+    },
+    "https://www.anthropic.com/news/claude-opus-4-6": {
+      "digest": "2026-07-26-coding-agents",
+      "item_id": "anthropic-opus-46-agent-teams-2026"
+    },
+    "https://www.anthropic.com/news/claude-opus-4-7": {
+      "digest": "2026-07-26-coding-agents",
+      "item_id": "anthropic-opus-47-ultrareview-2026"
+    },
+    "https://openai.com/index/codex-for-every-role-tool-workflow/": {
+      "digest": "2026-07-26-coding-agents",
+      "item_id": "openai-codex-roles-plugins-sites-2026"
+    },
+    "https://aws.amazon.com/blogs/architecture/architecting-for-agentic-ai-development-on-aws/": {
+      "digest": "2026-07-26-coding-agents",
+      "item_id": "aws-agentic-development-architecture-2026"
+    },
+    "https://arxiv.org/abs/2606.10106": {
+      "digest": "2026-07-26-coding-agents",
+      "item_id": "agent-harness-definition-2026"
+    },
+    "https://arxiv.org/abs/2604.25850": {
+      "digest": "2026-07-26-coding-agents",
+      "item_id": "agentic-harness-engineering-2026"
+    },
+    "https://openai.com/index/scaling-codex-to-enterprises-worldwide/": {
+      "digest": "2026-07-26-coding-agents",
+      "item_id": "openai-codex-enterprise-scaling-2026"
+    }
+  },
+  "events": {
+    "openai-codex-app-2026": {
+      "digest": "2026-07-26-coding-agents",
+      "title": "Codex app превращает IDE в диспетчерскую для нескольких агентов",
+      "published_at": "2026-02-02"
+    },
+    "openai-unrolling-codex-loop-2026": {
+      "digest": "2026-07-26-coding-agents",
+      "title": "Как устроен цикл Codex: prompt, tools, compaction и управление состоянием",
+      "published_at": "2026-01-23"
+    },
+    "openai-running-codex-safely-2026": {
+      "digest": "2026-07-26-coding-agents",
+      "title": "Безопасность coding agents становится архитектурой, а не серией подтверждений",
+      "published_at": "2026-05-08"
+    },
+    "openai-agents-transforming-work-2026": {
+      "digest": "2026-07-26-coding-agents",
+      "title": "Codex выходит за пределы разработки: данные о длинных и параллельных задачах",
+      "published_at": "2026-06-25"
+    },
+    "anthropic-claude-code-expertise-2026": {
+      "digest": "2026-07-26-coding-agents",
+      "title": "400 тысяч сессий Claude Code: экспертиза остаётся мультипликатором",
+      "published_at": "2026-06-16"
+    },
+    "github-copilot-coding-agent-updates-2026": {
+      "digest": "2026-07-26-coding-agents",
+      "title": "GitHub встраивает self-review и security scanning в coding agent",
+      "published_at": "2026-02-26"
+    },
+    "github-copilot-harness-evaluation-2026": {
+      "digest": "2026-07-26-coding-agents",
+      "title": "GitHub оценивает общий agent harness, а не модели по отдельности",
+      "published_at": "2026-06-25"
+    },
+    "github-context-routing-efficiency-2026": {
+      "digest": "2026-07-26-coding-agents",
+      "title": "Экономика агента начинается с кеширования контекста и deferred tools",
+      "published_at": "2026-06-17"
+    },
+    "github-execution-new-interface-2026": {
+      "digest": "2026-07-26-coding-agents",
+      "title": "GitHub Copilot SDK: execution становится интерфейсом AI-приложения",
+      "published_at": "2026-03-10"
+    },
+    "vscode-practical-agents-2026": {
+      "digest": "2026-07-26-coding-agents",
+      "title": "VS Code добавляет hooks, skills, browser tools и общую память агентов",
+      "published_at": "2026-03-05"
+    },
+    "vscode-agent-harness-2026": {
+      "digest": "2026-07-26-coding-agents",
+      "title": "VS Code формализует harness как model + loop + tools + context",
+      "published_at": "2026-05-15"
+    },
+    "cursor-agent-best-practices-2026": {
+      "digest": "2026-07-26-coding-agents",
+      "title": "Cursor: план, правила, skills и проверка важнее длинного prompt",
+      "published_at": "2026-01-09"
+    },
+    "cursor-local-agent-sandbox-2026": {
+      "digest": "2026-07-26-coding-agents",
+      "title": "Cursor сравнил четыре способа изоляции локального агента",
+      "published_at": "2026-02-18"
+    },
+    "cursor-scaling-long-running-agents-2026": {
+      "digest": "2026-07-26-coding-agents",
+      "title": "Сотни агентов и недели работы: эксперимент Cursor с автономной разработкой",
+      "published_at": "2026-01-14"
+    },
+    "anthropic-opus-46-agent-teams-2026": {
+      "digest": "2026-07-26-coding-agents",
+      "title": "Claude Opus 4.6 добавляет agent teams и 1M-контекст",
+      "published_at": "2026-02-05"
+    },
+    "anthropic-opus-47-ultrareview-2026": {
+      "digest": "2026-07-26-coding-agents",
+      "title": "Opus 4.7 делает проверку отдельным режимом и вводит task budgets",
+      "published_at": "2026-04-16"
+    },
+    "openai-codex-roles-plugins-sites-2026": {
+      "digest": "2026-07-26-coding-agents",
+      "title": "Codex расширяется от coding agent к платформе работы для разных ролей",
+      "published_at": "2026-06-02"
+    },
+    "aws-agentic-development-architecture-2026": {
+      "digest": "2026-07-26-coding-agents",
+      "title": "AWS: архитектуру системы и репозитория нужно готовить для агентов",
+      "published_at": "2026-03-26"
+    },
+    "agent-harness-definition-2026": {
+      "digest": "2026-07-26-coding-agents",
+      "title": "Исследователи предлагают строгую границу понятия agent harness",
+      "published_at": "2026-06-08"
+    },
+    "agentic-harness-engineering-2026": {
+      "digest": "2026-07-26-coding-agents",
+      "title": "Harness можно оптимизировать автоматически по наблюдаемым траекториям",
+      "published_at": "2026-04-28"
+    },
+    "openai-codex-enterprise-scaling-2026": {
+      "digest": "2026-07-26-coding-agents",
+      "title": "Enterprise-внедрение Codex смещается от лицензий к redesign workflow",
+      "published_at": "2026-04-21"
+    },
+    "github-copilot-2026-harness-convergence": {
+      "digest": "2026-07-26-coding-agents",
+      "title": "Один общий harness связывает CLI, IDE, review и приложения",
+      "published_at": "2026-06-25"
+    }
+  }
 }
