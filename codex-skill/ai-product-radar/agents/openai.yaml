@@ -1,5 +1,4 @@
 interface:
   display_name: "AI Product Radar"
-  short_description: "Персональный аналитический дайджест AI и продуктов"
-  default_prompt: "Use $ai-product-radar to create a new personalised news digest and update the HTML archive."
-
+  short_description: "Двуязычный аналитический дайджест AI и продуктов"
+  default_prompt: "Use $ai-product-radar to create a bilingual Russian and British English news digest and update the HTML archive."

@@ -1,11 +1,11 @@
 ---
 name: ai-product-radar
-description: Research, curate, and publish personalised Russian-language news digests about AI product development, coding agents, business analysis, product management, enterprise AI, internal tools, HRTech, EdTech, fintech, and innovation. Use when Ekaterina asks to collect recent news, create or refresh an AI Product Radar digest, investigate a topic, or update the local HTML news archive.
+description: Research, curate, translate, and publish personalised bilingual Russian and British English news digests about AI product development, coding agents, business analysis, product management, enterprise AI, internal tools, HRTech, EdTech, fintech, and innovation. Use when Ekaterina asks to collect recent news, create or refresh an AI Product Radar digest, investigate a topic, translate a digest, or update the HTML news archive.
 ---
 
 # AI Product Radar
 
-Create an evidence-based digest that can replace reading most source articles. Work in `/Users/ekaterina/AI-Product-Radar`.
+Create an evidence-based bilingual digest that can replace reading most source articles. Work in `/Users/ekaterina/AI-Product-Radar`.
 
 ## Before research
 
@@ -27,7 +27,12 @@ Create an evidence-based digest that can replace reading most source articles. W
 
 ## Write the digest
 
-Create `data/digests/YYYY-MM-DD[-topic].json` following `references/digest-schema.json`.
+Create two files following `references/digest-schema.json`:
+
+- `data/digests/YYYY-MM-DD[-topic].json` in Russian with `language: "ru"`;
+- `data/digests/YYYY-MM-DD[-topic]-en.json` in British English with `language: "en-GB"`.
+
+Set `counterpart_slug` in each file to the other version's slug. Write the Russian editorial version first, then translate it into natural British English without abridging, simplifying, adding claims, or changing structure. Preserve item IDs, scores, dates, URLs, source titles, technical names, evidence, examples, limitations, and approximate length. Use British spelling and product terminology consistently.
 
 For each selected item:
 
@@ -48,13 +53,15 @@ Run:
 
 ```bash
 node scripts/validate-digest.mjs data/digests/<file>.json
+node scripts/validate-digest.mjs data/digests/<file>-en.json
 node scripts/build-site.mjs
 ```
 
 Fix every validation error. Confirm that:
 
 - `public/index.html` was updated;
-- `public/digests/<slug>.html` exists;
+- both `public/digests/<slug>.html` and its `-en` counterpart exist;
+- both pages have a visible language switch;
 - `state/seen.json` includes the new canonical URLs;
 - existing digest files remain unchanged.
 
@@ -68,4 +75,4 @@ git push origin main
 
 Do not amend or rewrite earlier commits. If the push fails, preserve the local commit and report the failure. Do not send notifications unless the user explicitly asks.
 
-Report the live archive URL `https://egorovacate.github.io/ai-product-radar/`, the digest path, item count, date range, and the three strongest items.
+Report the live archive URL `https://egorovacate.github.io/ai-product-radar/`, both language URLs, item count, date range, and the three strongest items.
