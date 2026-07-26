@@ -27,14 +27,25 @@ Create an evidence-based bilingual digest that can replace reading most source a
 
 ## Write the digest
 
-Create two files following `references/digest-schema.json`:
+First create a language-neutral evidence brief at `data/evidence/YYYY-MM-DD[-topic].json`. For every item record the stable ID, primary facts, numbers, dates, source claims, curator inferences, limitations, applications, and source URLs. Treat it as the shared factual contract.
+
+Then create two independently written editorial files following `references/digest-schema.json`:
 
 - `data/digests/YYYY-MM-DD[-topic].json` in Russian with `language: "ru"`;
 - `data/digests/YYYY-MM-DD[-topic]-en.json` in British English with `language: "en-GB"`.
 
-Set `counterpart_slug` in each file to the other version's slug. Write the Russian editorial version first, then translate it into natural British English without abridging, simplifying, adding claims, or changing structure. Preserve item IDs, scores, dates, URLs, source titles, technical names, evidence, examples, limitations, and approximate length. Use British spelling and product terminology consistently.
+Set `counterpart_slug` in each file to the other version's slug. Draft both versions directly from the same evidence brief; do not use one language as the source text for the other. Keep item IDs, scores, dates, URLs, source titles, evidence, examples, limitations, decisions, and analytical depth aligned, while allowing each language to use its own natural syntax, rhythm, terminology, and idiom.
 
-For a completed Russian digest, use `node scripts/translate-digest.mjs data/digests/<file>.json`; it checkpoints every item and rejects a suspiciously short or structurally altered result. Review the English output before publishing.
+Use `node scripts/translate-digest.mjs data/digests/<file>.json` only to backfill a legacy Russian-only edition. Never use it as the default workflow for a new digest.
+
+Before validation and every publication, proofread the complete pair with:
+
+```bash
+node scripts/proofread-digest-pair.mjs data/digests/<file>.json
+node scripts/verify-digest-pair.mjs data/digests/<file>.json
+```
+
+Treat both commands as a mandatory editorial gate. Copy-edit both languages without changing facts, evidence, structure, links, scores, uncertainty, or analytical depth. Require idiomatic Russian and natural British English, verify terminology across the pair, and reject suspicious shortening or structural drift.
 
 For each selected item:
 

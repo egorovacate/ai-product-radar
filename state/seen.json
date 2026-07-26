@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-26T12:50:10.475Z",
+  "updated_at": "2026-07-26T13:12:56.868Z",
   "urls": {
     "https://openai.com/index/introducing-the-codex-app/": {
       "digest": "2026-07-26-coding-agents",
@@ -89,7 +89,7 @@
   "events": {
     "openai-codex-app-2026": {
       "digest": "2026-07-26-coding-agents",
-      "title": "Codex app превращает IDE в диспетчерскую для нескольких агентов",
+      "title": "Приложение Codex превращает IDE в диспетчерскую для нескольких агентов",
       "published_at": "2026-02-02"
     },
     "openai-unrolling-codex-loop-2026": {
@@ -104,7 +104,7 @@
     },
     "openai-agents-transforming-work-2026": {
       "digest": "2026-07-26-coding-agents",
-      "title": "Codex выходит за пределы разработки: данные о длинных и параллельных задачах",
+      "title": "Codex выходит за пределы разработки: данные о длительных и параллельных задачах",
       "published_at": "2026-06-25"
     },
     "anthropic-claude-code-expertise-2026": {
@@ -159,7 +159,7 @@
     },
     "anthropic-opus-46-agent-teams-2026": {
       "digest": "2026-07-26-coding-agents",
-      "title": "Claude Opus 4.6 добавляет agent teams и 1M-контекст",
+      "title": "Claude Opus 4.6 добавляет agent teams и контекст на 1M токенов",
       "published_at": "2026-02-05"
     },
     "anthropic-opus-47-ultrareview-2026": {
@@ -169,7 +169,7 @@
     },
     "openai-codex-roles-plugins-sites-2026": {
       "digest": "2026-07-26-coding-agents",
-      "title": "Codex расширяется от coding agent к платформе работы для разных ролей",
+      "title": "Codex расширяется от coding agent до рабочей платформы для разных ролей",
       "published_at": "2026-06-02"
     },
     "aws-agentic-development-architecture-2026": {
@@ -179,17 +179,17 @@
     },
     "agent-harness-definition-2026": {
       "digest": "2026-07-26-coding-agents",
-      "title": "Исследователи предлагают строгую границу понятия agent harness",
+      "title": "Исследователи предлагают строгие границы понятия agent harness",
       "published_at": "2026-06-08"
     },
     "agentic-harness-engineering-2026": {
       "digest": "2026-07-26-coding-agents",
-      "title": "Harness можно оптимизировать автоматически по наблюдаемым траекториям",
+      "title": "Harness можно автоматически оптимизировать по наблюдаемым траекториям",
       "published_at": "2026-04-28"
     },
     "openai-codex-enterprise-scaling-2026": {
       "digest": "2026-07-26-coding-agents",
-      "title": "Enterprise-внедрение Codex смещается от лицензий к redesign workflow",
+      "title": "Enterprise-внедрение Codex смещается от лицензий к redesign workflows",
       "published_at": "2026-04-21"
     },
     "github-copilot-2026-harness-convergence": {
