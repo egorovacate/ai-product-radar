@@ -58,5 +58,14 @@ Fix every validation error. Confirm that:
 - `state/seen.json` includes the new canonical URLs;
 - existing digest files remain unchanged.
 
-Report the digest path, item count, date range, and the three strongest items. Do not create a Git commit, push, deploy, or send a notification unless the user explicitly asks.
+After validation, publish the new digest:
 
+```bash
+git add data/digests public state/seen.json
+git commit -m "Add radar digest <slug>"
+git push origin main
+```
+
+Do not amend or rewrite earlier commits. If the push fails, preserve the local commit and report the failure. Do not send notifications unless the user explicitly asks.
+
+Report the live archive URL `https://egorovacate.github.io/ai-product-radar/`, the digest path, item count, date range, and the three strongest items.
