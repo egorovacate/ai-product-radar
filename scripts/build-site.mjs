@@ -70,6 +70,7 @@ a{color:var(--accent-dark);text-underline-offset:3px}a:focus-visible,button:focu
 .lede{font-size:1.12rem;border-left:4px solid var(--accent);padding-left:18px}.section{margin-top:32px}.section h3{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .sources{padding-left:20px}.verdict{border:1px solid color-mix(in srgb,var(--positive) 35%,var(--line));border-radius:4px;background:color-mix(in srgb,var(--positive) 9%,var(--paper));padding:16px 18px;color:var(--positive)}
 .back-top{display:inline-block;margin-top:18px;font:600 .82rem/1.4 "Golos Text",sans-serif}.empty{padding:54px;text-align:center;border:1px dashed var(--line);border-radius:4px;color:var(--muted)}
+.digest-actions{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin:0 0 28px}.digest-actions .back-top{margin:0}.digest-actions .language{display:inline-flex;align-items:center;min-height:34px}
 .archive-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin:42px 0 20px}.archive-head h2{margin:0;font:700 2rem/1.1 "Golos Text",sans-serif}
 .footer{margin-top:54px;padding-top:28px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
 @media(max-width:760px){.shell{padding:44px 16px 68px}.sitebar-inner{padding:0 16px}.top{grid-template-columns:1fr}.factbox{max-width:320px}.toc ol{columns:1}.article{padding:22px 18px}.archive-head{display:block}.site-link:first-child{display:none}}
@@ -141,12 +142,12 @@ function renderDigest(digest) {
       <a class="back-top" href="#contents">${t.top}</a>
     </article>`;
   }).join("");
-  const contents = digest.items.map((item, index) => `<li><a href="#${escapeHtml(item.id)}">${index + 1}. ${escapeHtml(item.title)}</a></li>`).join("");
+  const contents = digest.items.map((item) => `<li><a href="#${escapeHtml(item.id)}">${escapeHtml(item.title)}</a></li>`).join("");
   const description = `${halfYear ? t.half : t.themed} AI Product Radar: ${digest.intro}`;
   const periodLabel = en ? (halfYear ? "the first half of 2026 and July" : "the selected period") : (halfYear ? "первое полугодие и июль 2026" : "выбранный период");
   const counterpartExists = digest.counterpart_slug && fs.existsSync(path.join(digestDir, `${digest.counterpart_slug}.json`));
   const languageLink = counterpartExists ? ` <a class="language" href="${escapeHtml(digest.counterpart_slug)}.html">${en ? "Русский" : "English"}</a>` : "";
-  return layout(digest.title, description, `/radar/digests/${digest.slug}.html`, `<a class="back-top" href="../index.html">${t.back}</a>${languageLink}
+  return layout(digest.title, description, `/radar/digests/${digest.slug}.html`, `<nav class="digest-actions" aria-label="${en ? "Edition navigation" : "Навигация по выпуску"}"><a class="back-top" href="../index.html">${t.back}</a>${languageLink}</nav>
     <header class="top"><div><div class="brand">AI Product Radar · ${halfYear ? t.half : t.themed}</div><h1 class="title">${escapeHtml(digest.title)}</h1><p class="subtitle">${escapeHtml(digest.intro)}</p><p class="meta">${escapeHtml(digest.period.from)} — ${escapeHtml(digest.period.to)} · ${digest.items.length} ${t.materials} · ${t.sourceNote}</p></div><aside class="factbox"><strong>${digest.items.length}</strong><span>${t.analysed} · ${periodLabel}</span></aside></header>
     <section class="intro"><h2>${t.howTitle}</h2><p>${t.howText}</p></section>
     <nav class="toc" id="contents" aria-label="${t.contents}"><h2>${t.contents}</h2><ol>${contents}</ol></nav>${items}`, true, digest.language);
