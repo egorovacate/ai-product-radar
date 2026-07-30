@@ -5,14 +5,14 @@ description: Research, curate, translate, and publish personalised bilingual Rus
 
 # AI Product Radar
 
-Create an evidence-based bilingual digest that can replace reading most source articles. Work in `/Users/ekaterina/AI-Product-Radar`.
+Create an evidence-based bilingual digest that can replace reading most source articles. Work in `/Users/ekaterina/Downloads/Claude/AI-Product-Radar`.
 
 ## Before research
 
 1. Read `references/profile.md` completely.
 2. Read `references/editorial-policy.md` completely.
-3. Read `/Users/ekaterina/AI-Product-Radar/config/sources.json`.
-4. Inspect `/Users/ekaterina/AI-Product-Radar/state/seen.json` and recent files in `data/digests/`.
+3. Read `/Users/ekaterina/Downloads/Claude/AI-Product-Radar/config/sources.json`.
+4. Inspect `/Users/ekaterina/Downloads/Claude/AI-Product-Radar/state/seen.json` and recent files in `data/digests/`.
 5. Interpret an unspecified period as the time since the latest digest, capped at seven days. State the exact date range.
 
 ## Research
